@@ -1,0 +1,12 @@
+#include<stdio.h>
+main(){
+    int i,*p;         //分别用指针，直接输出来输出字符型变量，整形变量。
+char j,*q;            
+scanf(%d,%c,&i,&j);
+p=&i;
+q=&j;
+printf(%d,i);
+printf(n%dn,*p);
+printf(%c,j);
+printf(n%cn,*q);
+}

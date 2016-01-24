@@ -1,0 +1,11 @@
+#include<stdio.h>
+main(){
+    int a,*p;
+char b,*q;    //利用指针变量改变原始数据
+scanf(%d,%c,&a,&b);
+p=&a;
+q=&b;
+*p=*p+21;
+*q=*q+32;
+printf(%d,%c,a,b);
+}

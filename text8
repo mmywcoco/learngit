@@ -1,0 +1,24 @@
+//定义一个由整数组成的数组，求出其中的奇数和偶数的个数,并打印
+#include<stdio.h>
+main(){
+     int i,ji=0,ou=0;
+ int t[]={1,2,3,4,5,6,8};
+ for(i=0;i<7;i++){
+         if(t[i]%2==0){
+       ou++;
+   printf(ou:);
+       printf(%dn,t[i]);
+ }
+
+
+ if(t[i]%2!=0){
+    ji++;
+printf(ji:); 
+printf(%dn,t[i]);
+ } 
+ 
+ }
+           printf(ji num:%dn,ji);
+   printf(ou num:%d,ou);
+
+}
