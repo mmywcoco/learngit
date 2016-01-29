@@ -1,0 +1,30 @@
+//计数排序
+#include<stdlib.h>
+#include<stdio.h>
+main()
+{
+    int i=0,j=0,k=0;
+int base_array[101],sort_array[10];
+printf(input 10 grades:);
+for(i=0;i<10;i++)
+    scanf(%d,&sort_array[i]);
+for(i=0;i<101;i++)
+    base_array[i]=0;
+for(i=0;i<10;i++)
+    base_array[sort_array[i]]++;
+for(i=0;i<101;i++)
+{
+if(base_array[i]!=0)
+{
+for(k=0;k<base_array[i];k++)
+{
+        sort_array[j]=i;
+j++;
+}
+}
+}
+          printf(output results:);
+  for(i=0;i<10;i++)
+  printf(%5d,sort_array[i]);
+  printf(n);
+}
