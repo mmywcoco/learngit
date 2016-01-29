@@ -1,0 +1,34 @@
+//从键盘输入4个学生语文和数学成绩，计算每个
+//学生总分，并按总分与由高到低输出总分和两门
+//课程的成绩(选择排序)
+#include<stdio.h>
+main(){
+   int score[4][2],sum[4],i,j,k,m,t=1;
+   printf(input math and chinese:);
+   for(i=0;i<4;i++)
+   {
+   scanf(%d,%d,&score[i][0],&score[i][1]);
+   sum[i]=score[i][0]+score[i][1];
+   }
+   for(i=0;i<3;i++)
+   {
+       k=i;
+   for(j=i+1;j<4;j++)
+     if(sum[k]<sum[j]) k=j;
+ if(k!=i)
+ {
+  for(j=0;j<2;j++)
+  {
+ m=score[i][j];
+ score[i][j]=score[k][j];
+ score[k][j]=m;
+  }
+  t=sum[i];
+  sum[i]=sum[k];
+  sum[k]=t;
+ }
+   }
+   for(i=0;i<4;i++)
+   printf(sum:%5d,math:%5d,chinese:%5dn,sum[i],score[i][0],score[i][1]);
+
+}
