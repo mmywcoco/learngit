@@ -1,0 +1,39 @@
+//设有3个班长候选人“fu”,“lu”,“shou”,全班共有80人，
+//每人只能选一位班长候选人名字，再按得票数从高到低的顺序
+//输出各候选人的得票数
+#include<stdio.h>
+#include<string.h>
+struct person
+{
+      char name[10];
+  int count;
+};
+main(){
+    struct person student[3]={fu,0,lu,0,shou},t;
+int i,j,k,m,n=3;
+char name[20];
+printf(input votes:);
+scanf(%d,&m);
+for(i=1;i<=m;i++){
+     printf(%d,i);
+     printf(input name:);
+ scanf(%c,name[20]);
+ for(j=0;i<n;i++)
+ if(strcmp(name,student[j].name[20])==0)
+      student[j].count++;
+}
+for(i=0;i<n-1;i++){
+     k=i;
+ for(j=i+1;j<n;j++)
+   if(student[i].count<student[j].count)
+    k=j;
+ if(k!=i){
+             t=student[i];
+ student[i]=student[k];
+ student[k]=t;   
+ }
+}
+printf(output votes and name:);
+for(i=0;i<n;i++)
+printf(%dt%c,student[i].count,student[i].name[20]);
+}
